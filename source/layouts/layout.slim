@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" 
+    title #{current_page.data.title} || "Pelucas Gladys"
+    link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic' rel='stylesheet' type='text/css'
+    link href="stylesheets/styles.css" media="screen" rel="stylesheet" type="text/css"
+    
+  body class="#{page_classes} "
+    = partial "partials/header"
+    = yield
+    = partial "partials/footer"
+    
+  script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"
+  script src="javascripts/all.js" type="text/javascript"

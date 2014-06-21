@@ -1,0 +1,18 @@
+.hero{
+  position: relative;
+  overflow: hidden;
+  figure{
+    // background: red;
+      @include filter (grayscale(80%));
+    img{
+      // opacity: 0.8;
+      width: 100%;
+      display: block;
+    }
+  }
+  .hero-legend{
+    position: absolute;
+    top: 0;
+  }
+}
+

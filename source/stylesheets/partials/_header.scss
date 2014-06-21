@@ -1,0 +1,34 @@
+header{
+  width: 100%;
+  height: 95px;
+  padding-top: 30px;
+  a{
+    text-decoration: none;
+  }
+}
+
+.logo{
+  @include inline-block;
+  vertical-align: bottom;
+}
+.menu{
+  vertical-align: bottom;
+  float: right;
+  @include clearfix;
+  ul{
+    list-style: none;
+    li{
+      @include inline-block;
+
+      a{
+        padding: 12px 13px;
+        vertical-align: middle;
+        display: block;
+        &:hover{
+          background: $colorgreen;
+          color: $colorwhite;
+        }
+      }
+    }
+  }
+}

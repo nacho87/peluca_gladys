@@ -1,0 +1,29 @@
+*,*:before,*:after{
+  @include box-sizing(border-box);
+}
+body{
+  margin: 0 auto;
+  width: 100%;
+  
+  font-family: $font-primary;
+  color: $colorblack;
+
+  a{
+    color: $colorblack;
+  }
+}
+.container{
+  max-width: 960px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+}
+
+h1{
+  margin: 0;
+}
