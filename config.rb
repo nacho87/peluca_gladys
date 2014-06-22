@@ -4,7 +4,7 @@
 
 # Change Compass configuration
 # compass_config do |config|
-#   config.output_style = :compact
+#   config.output_style = :nested
 # end
 
 ###
@@ -47,14 +47,37 @@
 #   end
 # end
 
+# class mini < Middleman::Extension
+#   def initialize(app, options_hash={}, &block)
+#     super
+
+#     app.compass_config do |config|
+#       # config is the Compass.configuration object
+#       config.output_style = :compact
+#     end
+#   end
+# end
+
+
+
+Slim::Engine.set_default_options :pretty => true
+
+# activate :livereload
+activate :bourbon
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+# output_style = :nested # :expanded or :nested or :compact or :compressed
+
+# line_comments = false
+
 # Build-specific configuration
 configure :build do
+
   # For example, change the Compass output style for deployment
   # activate :minify_css
 

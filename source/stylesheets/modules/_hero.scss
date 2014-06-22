@@ -1,6 +1,7 @@
 .hero{
   position: relative;
   overflow: hidden;
+  width: 100%;
   figure{
     // background: red;
       @include filter (grayscale(80%));
