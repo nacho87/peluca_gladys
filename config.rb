@@ -78,6 +78,7 @@ set :images_dir, 'images'
 # Build-specific configuration
 configure :build do
 
+  Encoding.default_external = 'utf-8'
   # For example, change the Compass output style for deployment
   # activate :minify_css
 
