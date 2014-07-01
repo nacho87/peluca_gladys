@@ -1,5 +1,12 @@
 .history{
   background: $colorgreen2;
   color: $colorwhite;
-  
+  // font-size: $size35;
+  .container{
+    @include outer-container;
+    p{
+      font-size: $size25;
+      text-align: center;
+    }
+  }
 }

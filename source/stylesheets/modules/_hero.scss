@@ -2,18 +2,45 @@
   position: relative;
   overflow: hidden;
   width: 100%;
+  background: $colorblack2;
+  .container{
+    @include outer-container;
+
+  }
   figure{
     // background: red;
       @include filter (grayscale(80%));
     img{
-      // opacity: 0.8;
+      opacity: 0.8;
       width: 100%;
       display: block;
     }
   }
   .hero-legend{
     position: absolute;
-    top: 0;
+    top: 50%;
+    color: $colorblack2;
+    background: white;
+    padding: 19px 10px;
+    opacity: 0.8;
+    strong{
+      color: $colorblue;
+    }
+    ol{
+      bottom: -20px;
+    }
+  }
+  .flex-viewport{
+    @include outer-container;
+    
+    // width: 100%;
+    text-align: center;
+    .flex-active{
+      border: 2px $colorblack solid;
+    }
+  }
+  li{
+    font-size: $size40;
   }
 }
 

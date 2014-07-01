@@ -1,5 +1,22 @@
+.gallery{
+  padding-top: 20px;
+  @include outer-container;
+  p{
+    text-align: center;
+    font-size: $size18;
+  }
+}
+
 .slides{
   li{
     margin-right: 5px;
   }
+}
+
+.flexslider{
+  box-shadow: 0 1px 4px rgba($colorgreen, 0.2);
+}
+
+.flex-direction-nav a{
+  color: rgba($colorgreen, 0.8 );
 }

@@ -1,0 +1,55 @@
+.contact{
+  @include outer-container;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  .left_contact{
+    @include span-columns(6);
+    form{
+      text-align: right;
+      input, textarea{
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+        border: 2px solid rgba($colorgreen, 0.8);
+        padding: 5px;
+        color: $colorblack;
+        @include placeholder {
+          color: $colorgreen;
+        }
+      }
+      input{
+        height: 40px;
+      }
+      textarea{
+        height: 100px;
+      }
+      button{
+        height: 45px;
+        background: $colorgreen;
+        border: $colorgreen;
+        color: $colorwhite;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+
+  .right_contact{
+    @include span-columns(6);
+    @include omega();
+    font-size: $size20;
+    ul{
+      padding-left: 0px;
+      list-style: none;
+      i,p{
+        @include inline-block;
+      }
+      i{
+        margin-right: 10px;
+      }
+      span{
+        color: $colorgreen;
+      }
+    }
+  }
+}

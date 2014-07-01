@@ -1,6 +1,12 @@
 .services{
   background: $colorblue2;
   color: $colorwhite;
-
-//comments
+  
+  .container{
+    @include outer-container;
+  }
+  p{
+    text-align: center;
+    font-size: $size18;
+  }
 }

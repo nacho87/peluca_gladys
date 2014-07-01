@@ -1,30 +1,28 @@
 
-@import "bourbon";
+@import "vendor/flexslider.css";
 @import "vendor/normalize";
 
+@import "bourbon";
+@import "neat";
+@import "tools/grid-settings";
 @import "tools/settings";
 
+//base
+@import "base/fonts";
 @import "base/base";
 
 //layout
 @import "layout/layout";
 @import "layout/footer";
-
 @import "partials/header";
-
 
 //modules
 @import "modules/hero";
 @import "modules/history";
 @import "modules/services";
 @import "modules/gallery";
+@import "modules/contact";
 
-@import "vendor/flexslider.css";
 
-// .flexslider{
-//   width: 940px;
-//   img{
-//     height: 100px;
-//     width: 100px;
-//   }
-// }
+
+//vendor

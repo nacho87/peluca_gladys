@@ -19,4 +19,8 @@ gem "slim" ,"~>2.0.2"
 #bourbon
 gem 'bourbon'
 
+#sass
 gem 'sass'
+
+#neat
+gem 'neat'

@@ -1,5 +1,14 @@
 footer{
   height: 90px;
   background: $colorblue2;
+  .container{
+    @include outer-container;
+  }
+  p{
+    color: $colorwhite;
+    font-size: $size18;
+    margin: 0;
+    line-height: 90px;
+  }
 }
 
