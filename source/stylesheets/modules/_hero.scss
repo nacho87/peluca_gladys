@@ -5,6 +5,8 @@
   background: $colorblack2;
   .container{
     @include outer-container;
+      padding-left: 25px;
+      padding-right: 25px;
 
   }
   figure{
@@ -23,6 +25,14 @@
     background: white;
     padding: 19px 10px;
     opacity: 0.8;
+    max-width: 100%;
+    @include media($tablet){
+      @include outer-container;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
     strong{
       color: $colorblue;
     }
@@ -32,7 +42,13 @@
   }
   .flex-viewport{
     @include outer-container;
-    
+    @include media($mobile){
+      ul{
+        li{
+          font-size: $size20;
+        }
+      }
+    }
     // width: 100%;
     text-align: center;
     .flex-active{
@@ -41,6 +57,7 @@
   }
   li{
     font-size: $size40;
+
   }
 }
 

@@ -1,7 +1,11 @@
 .services{
   background: $colorblue2;
   color: $colorwhite;
-  
+  @include media($tablet) {
+    @include span-columns(8);
+    padding-right: 20px;
+    padding-left: 20px;
+  }
   .container{
     @include outer-container;
   }
