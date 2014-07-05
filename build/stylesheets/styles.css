@@ -401,33 +401,33 @@ table {
 .icon-wig:before {
   content: "\e600"; }
 
-/* line 1, /home/nacho/proyecto/gladys/web/source/stylesheets/base/_base.scss */
+/* line 3, /home/nacho/proyecto/gladys/web/source/stylesheets/base/_base.scss */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 4, /home/nacho/proyecto/gladys/web/source/stylesheets/base/_base.scss */
+/* line 6, /home/nacho/proyecto/gladys/web/source/stylesheets/base/_base.scss */
 body {
   margin: 0 auto;
   width: 100%;
   font-size: 1em;
   font-family: "Lato", sans-serif;
   color: #444444; }
-  /* line 11, /home/nacho/proyecto/gladys/web/source/stylesheets/base/_base.scss */
+  /* line 13, /home/nacho/proyecto/gladys/web/source/stylesheets/base/_base.scss */
   body a {
     color: #444444; }
 
-/* line 22, /home/nacho/proyecto/gladys/web/source/stylesheets/base/_base.scss */
+/* line 18, /home/nacho/proyecto/gladys/web/source/stylesheets/base/_base.scss */
 ul {
   padding: 0;
   margin: 0; }
 
-/* line 27, /home/nacho/proyecto/gladys/web/source/stylesheets/base/_base.scss */
+/* line 23, /home/nacho/proyecto/gladys/web/source/stylesheets/base/_base.scss */
 h1 {
   margin: 0; }
 
-/* line 31, /home/nacho/proyecto/gladys/web/source/stylesheets/base/_base.scss */
+/* line 27, /home/nacho/proyecto/gladys/web/source/stylesheets/base/_base.scss */
 h2 {
   text-align: center;
   font-size: 2.1875em; }
@@ -495,8 +495,13 @@ header {
     top: -10px;
     left: 0;
     color: #1bbc9b; }
+  @media screen and (max-width: 768px) {
+    /* line 15, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
+    .logo {
+      width: 100%;
+      margin-bottom: 20px; } }
 
-/* line 28, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
+/* line 32, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
 .menu {
   vertical-align: bottom;
   float: right; }
@@ -505,17 +510,26 @@ header {
     content: "";
     display: table;
     clear: both; }
-  /* line 32, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
+  @media screen and (max-width: 768px) {
+    /* line 32, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
+    .menu {
+      width: 100%;
+      margin-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center; } }
+  /* line 43, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
   .menu ul {
     list-style: none; }
-    /* line 34, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
+    /* line 45, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
     .menu ul li {
       display: inline-block;
       vertical-align: baseline;
       zoom: 1;
       *display: inline;
-      *vertical-align: auto; }
-      /* line 37, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
+      *vertical-align: auto;
+      margin-bottom: 10px; }
+      /* line 48, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
       .menu ul li a {
         padding: 12px 13px;
         vertical-align: middle;
@@ -523,7 +537,7 @@ header {
         -webkit-transition: all 0.3s ease;
         -moz-transition: all 0.3s ease;
         transition: all 0.3s ease; }
-        /* line 42, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
+        /* line 53, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
         .menu ul li a:hover {
           background: #1bbc9b;
           color: white; }
@@ -538,36 +552,54 @@ header {
   .hero .container {
     max-width: 68em;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    padding-left: 25px;
+    padding-right: 25px; }
     /* line 15, /home/nacho/.rvm/gems/ruby-2.1.2@middleman-gladys/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_clearfix.scss */
     .hero .container:after {
       content: "";
       display: table;
       clear: both; }
-  /* line 10, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_hero.scss */
+  /* line 12, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_hero.scss */
   .hero figure {
     -webkit-filter: grayscale(80%);
     filter: grayscale(80%); }
-    /* line 13, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_hero.scss */
+    /* line 15, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_hero.scss */
     .hero figure img {
       opacity: 0.8;
       width: 100%;
       display: block; }
-  /* line 19, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_hero.scss */
+  /* line 21, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_hero.scss */
   .hero .hero-legend {
     position: absolute;
     top: 50%;
     color: black;
     background: white;
     padding: 19px 10px;
-    opacity: 0.8; }
-    /* line 26, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_hero.scss */
+    opacity: 0.8;
+    max-width: 100%; }
+    @media screen and (max-width: 768px) {
+      /* line 21, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_hero.scss */
+      .hero .hero-legend {
+        max-width: 68em;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0; }
+        /* line 15, /home/nacho/.rvm/gems/ruby-2.1.2@middleman-gladys/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_clearfix.scss */
+        .hero .hero-legend:after {
+          content: "";
+          display: table;
+          clear: both; } }
+    /* line 36, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_hero.scss */
     .hero .hero-legend strong {
       color: #1bbc9b; }
-    /* line 29, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_hero.scss */
+    /* line 39, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_hero.scss */
     .hero .hero-legend ol {
       bottom: -20px; }
-  /* line 33, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_hero.scss */
+  /* line 43, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_hero.scss */
   .hero .flex-viewport {
     max-width: 68em;
     margin-left: auto;
@@ -578,10 +610,14 @@ header {
       content: "";
       display: table;
       clear: both; }
-    /* line 38, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_hero.scss */
+    @media screen and (max-width: 480px) {
+      /* line 47, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_hero.scss */
+      .hero .flex-viewport ul li {
+        font-size: 1.25em; } }
+    /* line 54, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_hero.scss */
     .hero .flex-viewport .flex-active {
       border: 2px #444444 solid; }
-  /* line 42, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_hero.scss */
+  /* line 58, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_hero.scss */
   .hero li {
     font-size: 2.5em; }
 
@@ -603,12 +639,36 @@ header {
     .history .container p {
       font-size: 1.5625em;
       text-align: center; }
+  @media screen and (max-width: 768px) {
+    /* line 1, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_history.scss */
+    .history {
+      float: left;
+      display: block;
+      margin-right: 3.57866%;
+      width: 100%;
+      padding-right: 20px;
+      padding-left: 20px; }
+      /* line 38, /home/nacho/.rvm/gems/ruby-2.1.2@middleman-gladys/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+      .history:last-child {
+        margin-right: 0; } }
 
 /* line 1, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_services.scss */
 .services {
   background: #2d3e50;
   color: white; }
-  /* line 5, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_services.scss */
+  @media screen and (max-width: 768px) {
+    /* line 1, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_services.scss */
+    .services {
+      float: left;
+      display: block;
+      margin-right: 3.57866%;
+      width: 100%;
+      padding-right: 20px;
+      padding-left: 20px; }
+      /* line 38, /home/nacho/.rvm/gems/ruby-2.1.2@middleman-gladys/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+      .services:last-child {
+        margin-right: 0; } }
+  /* line 9, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_services.scss */
   .services .container {
     max-width: 68em;
     margin-left: auto;
@@ -618,7 +678,7 @@ header {
       content: "";
       display: table;
       clear: both; }
-  /* line 8, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_services.scss */
+  /* line 12, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_services.scss */
   .services p {
     text-align: center;
     font-size: 1.125em; }
@@ -638,16 +698,30 @@ header {
   .gallery p {
     text-align: center;
     font-size: 1.125em; }
+  @media screen and (max-width: 768px) {
+    /* line 1, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_gallery.scss */
+    .gallery {
+      max-width: 68em;
+      margin-left: auto;
+      margin-right: auto;
+      padding-right: 20px;
+      padding-left: 20px; }
+      /* line 15, /home/nacho/.rvm/gems/ruby-2.1.2@middleman-gladys/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_clearfix.scss */
+      .gallery:after {
+        content: "";
+        display: table;
+        clear: both; } }
 
-/* line 11, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_gallery.scss */
+/* line 17, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_gallery.scss */
 .slides li {
-  margin-right: 5px; }
+  margin-right: 5px;
+  font-size: 2em; }
 
-/* line 16, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_gallery.scss */
+/* line 23, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_gallery.scss */
 .flexslider {
   box-shadow: 0 1px 4px rgba(27, 188, 155, 0.2); }
 
-/* line 20, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_gallery.scss */
+/* line 27, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_gallery.scss */
 .flex-direction-nav a {
   color: rgba(27, 188, 155, 0.8); }
 
@@ -663,7 +737,20 @@ header {
     content: "";
     display: table;
     clear: both; }
-  /* line 5, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_contact.scss */
+  @media screen and (max-width: 768px) {
+    /* line 1, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_contact.scss */
+    .contact {
+      float: left;
+      display: block;
+      margin-right: 3.57866%;
+      width: 100%; }
+      /* line 38, /home/nacho/.rvm/gems/ruby-2.1.2@middleman-gladys/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+      .contact:last-child {
+        margin-right: 0; }
+      /* line 8, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_contact.scss */
+      .contact h2 {
+        margin-top: 20px; } }
+  /* line 12, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_contact.scss */
   .contact .left_contact {
     float: left;
     display: block;
@@ -672,10 +759,10 @@ header {
     /* line 38, /home/nacho/.rvm/gems/ruby-2.1.2@middleman-gladys/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
     .contact .left_contact:last-child {
       margin-right: 0; }
-    /* line 7, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_contact.scss */
+    /* line 14, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_contact.scss */
     .contact .left_contact form {
       text-align: right; }
-      /* line 9, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_contact.scss */
+      /* line 16, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_contact.scss */
       .contact .left_contact form input, .contact .left_contact form textarea {
         width: 100%;
         max-width: 100%;
@@ -695,13 +782,13 @@ header {
         /* line 4, /home/nacho/.rvm/gems/ruby-2.1.2@middleman-gladys/gems/bourbon-3.2.3/app/assets/stylesheets/css3/_placeholder.scss */
         .contact .left_contact form input:-ms-input-placeholder, .contact .left_contact form textarea:-ms-input-placeholder {
           color: #1bbc9b; }
-      /* line 20, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_contact.scss */
+      /* line 27, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_contact.scss */
       .contact .left_contact form input {
         height: 40px; }
-      /* line 23, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_contact.scss */
+      /* line 30, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_contact.scss */
       .contact .left_contact form textarea {
         height: 100px; }
-      /* line 26, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_contact.scss */
+      /* line 33, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_contact.scss */
       .contact .left_contact form button {
         height: 45px;
         background: #1bbc9b;
@@ -709,7 +796,19 @@ header {
         color: white;
         padding-left: 15px;
         padding-right: 15px; }
-  /* line 37, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_contact.scss */
+    @media screen and (max-width: 768px) {
+      /* line 12, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_contact.scss */
+      .contact .left_contact {
+        float: left;
+        display: block;
+        margin-right: 3.57866%;
+        width: 100%;
+        padding-right: 20px;
+        padding-left: 20px; }
+        /* line 38, /home/nacho/.rvm/gems/ruby-2.1.2@middleman-gladys/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+        .contact .left_contact:last-child {
+          margin-right: 0; } }
+  /* line 49, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_contact.scss */
   .contact .right_contact {
     float: left;
     display: block;
@@ -720,20 +819,32 @@ header {
     /* line 38, /home/nacho/.rvm/gems/ruby-2.1.2@middleman-gladys/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
     .contact .right_contact:last-child {
       margin-right: 0; }
-    /* line 41, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_contact.scss */
+    /* line 53, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_contact.scss */
     .contact .right_contact ul {
       padding-left: 0px;
       list-style: none; }
-      /* line 44, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_contact.scss */
+      /* line 56, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_contact.scss */
       .contact .right_contact ul i, .contact .right_contact ul p {
         display: inline-block;
         vertical-align: baseline;
         zoom: 1;
         *display: inline;
         *vertical-align: auto; }
-      /* line 47, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_contact.scss */
+      /* line 59, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_contact.scss */
       .contact .right_contact ul i {
         margin-right: 10px; }
-      /* line 50, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_contact.scss */
+      /* line 62, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_contact.scss */
       .contact .right_contact ul span {
         color: #1bbc9b; }
+    @media screen and (max-width: 768px) {
+      /* line 49, /home/nacho/proyecto/gladys/web/source/stylesheets/modules/_contact.scss */
+      .contact .right_contact {
+        float: left;
+        display: block;
+        margin-right: 3.57866%;
+        width: 100%;
+        padding-right: 20px;
+        padding-left: 20px; }
+        /* line 38, /home/nacho/.rvm/gems/ruby-2.1.2@middleman-gladys/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+        .contact .right_contact:last-child {
+          margin-right: 0; } }
