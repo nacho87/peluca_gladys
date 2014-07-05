@@ -3,10 +3,10 @@ section.contact#contact
 
   .left_contact
     h3 Responderemos tu consulta a la brevedad
-    form
-      input placeholder="Ingresa tu nombre"
-      input placeholder="Email"
-      textarea placeholder="Ingresa tu Consulta..."
+    form method="POST" action="mail.php" accept-charset="UTF-8"
+      input#nombre name="nombre" placeholder="Ingresa tu nombre" required="" type="text"
+      input#correo name="email" required="" type="email" placeholder="Email"
+      textarea#mensaje name="mensaje" placeholder="Ingresa tu Consulta..." required=""
       button type="submit" Enviar
 
   .right_contact
