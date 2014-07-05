@@ -477,8 +477,13 @@ header {
   /* line 10, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
   header h1 {
     font-size: 2em; }
+  @media screen and (max-width: 768px) {
+    /* line 13, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
+    header .container {
+      padding-left: 10px;
+      padding-right: 10px; } }
 
-/* line 15, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
+/* line 21, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
 .logo {
   display: inline-block;
   vertical-align: baseline;
@@ -488,7 +493,7 @@ header {
   vertical-align: bottom;
   position: relative;
   padding-left: 50px; }
-  /* line 20, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
+  /* line 26, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
   .logo .icon-wig {
     font-size: 2em;
     position: absolute;
@@ -496,12 +501,12 @@ header {
     left: 0;
     color: #1bbc9b; }
   @media screen and (max-width: 768px) {
-    /* line 15, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
+    /* line 21, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
     .logo {
       width: 100%;
       margin-bottom: 20px; } }
 
-/* line 32, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
+/* line 38, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
 .menu {
   vertical-align: bottom;
   float: right; }
@@ -511,17 +516,17 @@ header {
     display: table;
     clear: both; }
   @media screen and (max-width: 768px) {
-    /* line 32, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
+    /* line 38, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
     .menu {
       width: 100%;
       margin-bottom: 20px;
       padding-left: 10px;
       padding-right: 10px;
       text-align: center; } }
-  /* line 43, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
+  /* line 49, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
   .menu ul {
     list-style: none; }
-    /* line 45, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
+    /* line 51, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
     .menu ul li {
       display: inline-block;
       vertical-align: baseline;
@@ -529,7 +534,7 @@ header {
       *display: inline;
       *vertical-align: auto;
       margin-bottom: 10px; }
-      /* line 48, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
+      /* line 54, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
       .menu ul li a {
         padding: 12px 13px;
         vertical-align: middle;
@@ -537,7 +542,7 @@ header {
         -webkit-transition: all 0.3s ease;
         -moz-transition: all 0.3s ease;
         transition: all 0.3s ease; }
-        /* line 53, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
+        /* line 59, /home/nacho/proyecto/gladys/web/source/stylesheets/partials/_header.scss */
         .menu ul li a:hover {
           background: #1bbc9b;
           color: white; }
