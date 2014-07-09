@@ -3,10 +3,15 @@
   padding-top: 50px;
   padding-bottom: 70px;
   @include media($tablet) {
-    @include span-columns(8);
+    @include clearfix;
 
+    @include span-columns(8);
+    float: none;
     h2{
+      @include span-columns(8);
+      
       margin-top: 20px;
+      @include clearfix;
     }
   }
   .left_contact{
